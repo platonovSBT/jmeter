@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: ru.tecforce.xmlupdater:xmlupdater:2.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/tecforce/xmlupdater/xmlupdater/2.1-SNAPSHOT/xmlupdater-2.1-20190618.101405-3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/tecforce/xmlupdater/xmlupdater/2.1-SNAPSHOT/xmlupdater-2.1-20190618.101405-3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/tecforce/xmlupdater/xmlupdater/2.1-SNAPSHOT/xmlupdater-2.1-20190618.101405-3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

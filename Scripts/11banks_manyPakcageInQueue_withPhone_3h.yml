@@ -1,0 +1,61 @@
+---
+execution:
+- concurrency: 10
+  hold-for: 1h
+  ramp-up: 10s
+  scenario: UCJ01_Integration_2typePackage
+
+- concurrency: 1
+  hold-for: 1h
+  ramp-up: 10s
+  scenario: UCJ02_Sql_hierarchy  
+
+- concurrency: 1
+  hold-for: 1h
+  ramp-up: 10s
+  scenario: UCJ03_Sql_AnalizOstatkov
+
+- concurrency: 1
+  hold-for: 1h
+  ramp-up: 10s
+  scenario: UCJ04_Cron
+
+- concurrency: 1
+  hold-for: 1h
+  ramp-up: 10s
+  scenario: UCJ05_DFO
+
+- concurrency: 10
+  hold-for: 1h
+  ramp-up: 10s
+  scenario: UCJ06_Razdel_Uchet
+
+scenarios:
+  UCJ01_Integration_2typePackage:
+    script: UCJ01_Integration_2typePackage.jmx
+  UCJ02_Sql_hierarchy:
+    script: UCJ02_Sql_hierarchy.jmx
+  UCJ03_Sql_AnalizOstatkov:
+    script: UCJ03_Sql_AnalizOstatkov.jmx
+  UCJ04_Cron:
+    script: UCJ04_Cron.jmx
+  UCJ05_DFO:
+    script: UCJ05_DFO.jmx
+  UCJ06_Razdel_Uchet:
+    script: UCJ06_Razdel_Uchet.jmx
+
+
+reporting:
+- module: final-stats
+- module: console
+
+  
+
+settings:
+  artifacts-dir: result\%Y-%m-%d_%H-%M-%S.%f
+  aggregator: consolidator
+  check-interval: 5s
+  default-executor: jmeter
+
+
+provisioning: local
